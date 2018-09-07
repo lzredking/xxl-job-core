@@ -1,0 +1,16 @@
+记录修改位置，方便以后升级
+
+1.com.xxl.job.core.handler.annotation
+	增加类RegistJobHandler.java
+
+2.com.xxl.job.core.enums
+	增加类  ExecutorBlockStrategy.java
+		ExecutorFailStrategy.java
+		ExecutorRouteStrategy.java
+3./xxl-job-core/src/main/java/com/xxl/job/core/executor/XxlJobExecutor.java
+	修改方法start 95行增加代码 startRegistJobThread();
+	新增加三个方法			startRegistJobThread();
+		initRegistJob()
+		toStop();
+		
+		
